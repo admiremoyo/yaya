@@ -34,11 +34,11 @@ class Storiespage extends StatelessWidget {
           : value.error ? Text('oops,something went wrong ${value.errorMessage}'
           ,textAlign: TextAlign.center,) : 
           ListView.builder(
-            itemCount: value.map['feedback'].length,
+            itemCount: value.map.length,
             itemBuilder: (context,index) {
+            print(value.map.map(((element) => element)));
             
-            
-            return Newscard(map: value.map['feedback'][index]);
+            return Newscard(map: value.map[index]);
           },
           );
         },

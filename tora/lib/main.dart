@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'news.dart';
 import 'stories.dart';
 import 'package:flutter/material.dart';
